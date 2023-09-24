@@ -21,10 +21,14 @@ My solutions to the case study #1 Danny's Diner provided by the website https://
     2x points on all items, not just sushi - how many points do customer A and B have at the end 
     of January?
 
-    ---------
+The below table consists of question id along with my answers and output links:
     
 |Question ID| Answer       | Output        |
 |--|------------------------ |----------------:|
-|1|[Solution][] |[Output]()
+|1|[Solution](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/QUERIES/1.sql) |[Output](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/IMAGES/1.jpg)
+|2|[Solution](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/QUERIES/2.sql) |[Output](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/IMAGES/2.jpg)
+|3|[Solution](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/QUERIES/3.sql) |[Output](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/IMAGES/3.jpg)
+|4|[Solution](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/QUERIES/4.sql) |[Output](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/IMAGES/4.jpg)
+|5|[Solution](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/QUERIES/5.sql) |[Output](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/IMAGES/5.jpg)
     
     
