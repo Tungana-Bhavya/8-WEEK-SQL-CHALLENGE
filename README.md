@@ -38,5 +38,13 @@ The below table consists of question id along with my answers and output links:
 |3|[Solution](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/QUERIES/3.sql) |[Output](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/IMAGES/3.jpg)
 |4|[Solution](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/QUERIES/4.sql) |[Output](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/IMAGES/4.jpg)
 |5|[Solution](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/QUERIES/5.sql) |[Output](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/IMAGES/5.jpg)
+|6a|[Solution](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/QUERIES/6a.sql) |[Output](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/IMAGES/6a.jpg)
+|6b|[Solution](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/QUERIES/6b.sql) |[Output](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/IMAGES/6b.jpg)
+|7a|[Solution](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/QUERIES/7a.sql) |[Output](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/IMAGES/7a.jpg)
+|7b|[Solution](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/QUERIES/7b.sql) |[Output](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/IMAGES/7b.jpg)
+|8|[Solution](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/QUERIES/8.sql) |[Output](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/IMAGES/8.jpg)
+|9|[Solution](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/QUERIES/9.sql) |[Output](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/IMAGES/9.jpg)
+|10|[Solution](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/QUERIES/10.sql) |[Output](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/IMAGES/10.jpg)
+
     
     
