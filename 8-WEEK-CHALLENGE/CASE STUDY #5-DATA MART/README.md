@@ -34,4 +34,4 @@ In a single query, perform the following operations and generate a new table in 
 9.  Generate a new avg_transaction column as the sales value divided by transactions rounded to 2 decimal places for each record
 </details>
 
-<b>[Solution]()</b>
+<b>[Solution](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%235-DATA%20MART/DATA_CLEANSING.sql)</b>
