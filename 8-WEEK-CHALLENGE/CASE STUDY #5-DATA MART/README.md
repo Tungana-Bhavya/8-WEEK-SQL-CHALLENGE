@@ -3,7 +3,7 @@
 <img src="https://8weeksqlchallenge.com/images/case-study-designs/5.png" alt="Image" width="480" height="380">
 
 ### Case Study Questions
-<details><summary><a href="https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/tree/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%232-PIZZA%20RUNNER"><b>1. Data Cleansing Steps</b></a></summary>
+<details><summary><a href=""><b>1. Data Cleansing Steps</b></a></summary>
 In a single query, perform the following operations and generate a new table in the data_mart schema named clean_weekly_sales:
 
 1.  Convert the week_date to a DATE format
