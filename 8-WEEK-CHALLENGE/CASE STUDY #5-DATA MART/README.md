@@ -23,6 +23,7 @@ In a single query, perform the following operations and generate a new table in 
 |3 or 4|	Retirees
 
 6.  Add a new demographic column using the following mapping for the first letter in the segment values
+
 |segment|demographic|
 |-------|----------:|
 |C|Couples
