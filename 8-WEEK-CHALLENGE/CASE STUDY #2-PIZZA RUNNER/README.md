@@ -31,7 +31,7 @@
 <b>- [Solution](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%232-PIZZA%20RUNNER/RUNNER_AND_CUSTOMER_EXPERIENCE.sql)</b>
 <br>
 <details><summary><a href="https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/tree/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%232-PIZZA%20RUNNER"><b>Ingredient Optimisation Queries</b></a></summary>
-1.	What are the standard ingredients for each pizza? sol(https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%232-PIZZA%20RUNNER/IMAGES/IG/IO_1.jpg) <br>
+1.	What are the standard ingredients for each pizza? <br>
 2.	What was the most commonly added extra?<br>
 3.	What was the most common exclusion?<br>
 4.	Generate an order item for each record in the customers_orders table in the format of one of the following: <br>
