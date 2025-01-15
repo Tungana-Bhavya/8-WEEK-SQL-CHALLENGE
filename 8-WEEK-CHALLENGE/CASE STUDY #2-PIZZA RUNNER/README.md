@@ -39,12 +39,12 @@
 	*  Meat Lovers - Exclude Beef<br>
 	*  Meat Lovers - Extra Bacon<br>
 	*  Meat Lovers - Exclude Cheese, Bacon - Extra Mushroom, Peppers<br>
-6.	Generate an alphabetically ordered comma separated ingredient list for each pizza order from the customer_orders table and add a 2x in 
+5.	Generate an alphabetically ordered comma separated ingredient list for each pizza order from the customer_orders table and add a 2x in 
 front of any relevant ingredients For example: "Meat Lovers: 2xBacon, Beef, ... , Salami" <br>
-8.	What is the total quantity of each ingredient used in all delivered pizzas sorted by most frequent first?
+6.	What is the total quantity of each ingredient used in all delivered pizzas sorted by most frequent first?
 </details>
 
-<b>- [Solution]()</b>
+<b>- [Solution](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%232-PIZZA%20RUNNER/INGREDIENT_OPTIMIZATON.sql)</b>
 <br>
 <details><summary><a href="https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/tree/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%232-PIZZA%20RUNNER"><b>Pricing and Ratings Queries</b></a></summary>
 1.	If a Meat Lovers pizza costs $12 and Vegetarian costs $10 and there were no charges for changes - how much money has Pizza Runner made so 
