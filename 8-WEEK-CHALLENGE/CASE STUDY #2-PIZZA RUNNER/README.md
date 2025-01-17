@@ -76,6 +76,6 @@ front of any relevant ingredients For example: "Meat Lovers: 2xBacon, Beef, ... 
 would happen if a new Supreme pizza with all the toppings was added to the Pizza Runner menu?
 </details>
 
-<b>- [Solution]()</b>
+<b>- [Solution](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%232-PIZZA%20RUNNER/BONUS.sql)</b>
 
 
