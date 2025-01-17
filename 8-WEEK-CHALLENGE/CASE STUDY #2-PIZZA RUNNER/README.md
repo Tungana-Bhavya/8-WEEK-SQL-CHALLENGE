@@ -69,7 +69,7 @@ front of any relevant ingredients For example: "Meat Lovers: 2xBacon, Beef, ... 
 5.	If a Meat Lovers pizza was $12 and Vegetarian $10 fixed prices with no cost for extras and each runner is paid $0.30 per kilometre traveled - how much money does Pizza Runner have left over after these deliveries?
 </details>
 
-<b>- [Solution]()</b>
+<b>- [Solution](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%232-PIZZA%20RUNNER/PRICE_AND_RATINGS.sql)</b>
 <br>
 <details><summary><a href="https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/tree/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%232-PIZZA%20RUNNER"><b>Bonus Questions</b></a></summary>
 1. If Danny wants to expand his range of pizzas - how would this impact the existing data design? Write an INSERT statement to demonstrate what 
