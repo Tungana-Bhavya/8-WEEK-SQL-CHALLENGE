@@ -34,7 +34,7 @@ GROUP BY c.region_id, r.region_name ORDER BY customer_count DESC; </br>
   <img  src="https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%234%20DATA%20BANK/IMAGES/CNE_3.jpg">
 </p>
 
-h3 align ='left'>4. How many days on average are customers reallocated to a different node?</h3>
+<h3 align ='left'>4. How many days on average are customers reallocated to a different node?</h3>
 
 SELECT ROUND(AVG(TO_DAYS(end_date) - TO_DAYS(start_date)),0) avg_number_of_day </br>
 FROM customer_nodes WHERE end_date!='9999-12-31'; </br>
