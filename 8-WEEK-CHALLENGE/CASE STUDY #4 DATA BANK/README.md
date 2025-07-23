@@ -1,11 +1,10 @@
-## <p align ='left'>Case Study #5 Data Mart</p>
+## <p align ='left'>Case Study #5 Data Bank</p>
 
 <img src="https://8weeksqlchallenge.com/images/case-study-designs/4.png" alt="Image" width="480" height="380">
 
-### Case Study Questions
+## Case Study Questions
 
-<details><summary><a href=""><b>A. Customer Nodes Exploration</b></a></summary>
-
+[A. Customer Nodes Exploration](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%234%20DATA%20BANK/DATABASE/CUSTOMER_NODES_EXPLORATION.sql)
 <h3 align ='left'>1. How many unique nodes are there on the Data Bank system?</h3>
 
 SELECT COUNT(DISTINCT node_id) unique_nodes FROM customer_nodes; </br>
@@ -44,6 +43,7 @@ FROM customer_nodes WHERE end_date!='9999-12-31'; </br>
 </p>
 
 <h3 align ='left'>5. What is the median, 80th and 95th percentile for this same reallocation days metric for each region?</h3>
+
 WITH tmp_rank AS ( </br>
 SELECT region_name, </br>
 TO_DAYS(end_date) - TO_DAYS(start_date) days_diff, </br>
@@ -54,24 +54,27 @@ GROUP BY region_name </br>
 ORDER BY region_name) </br>
 
 SELECT region_name, days_diff percentile_80 FROM tmp_rank WHERE row_num >= CEIL(rows_sum * 0.8); </br>
+
 ### Output:</br>
 <p align="left">
   <img  src="https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%234%20DATA%20BANK/IMAGES/CNE_5.jpg">
-</p></details>
+</p>
 
-<details><summary><a href=""><b>B. Customer Transactions</b></a></summary>
+[B. Customer Transactions](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%234%20DATA%20BANK/DATABASE/CUSTOMER_TRANSACTION.sql)
   
 <h3 align ='left'>1. What is the unique count and total amount for each transaction type?</h3>
 SELECT txn_type, COUNT(*) unique_count, SUM(txn_amount) total_amount</details></br>
 FROM customer_transactions</br>
 GROUP BY txn_type</br>
 ORDER BY txn_type;</br>
+
 ### Output:</br>
 <p align="left">
   <img src = "https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%234%20DATA%20BANK/IMAGES/CT_1.jpg">
 </p>
 
-<h3 align ='left'>2. What is the average total historical deposit counts and amounts for all customers?</h3>
+<h3 align ='left'>2. What is the average total historical deposit counts and amounts for all customers</h3>
+
 WITH deposit_tmp AS </br>
 (</br>
 SELECT customer_id, </br>
@@ -91,6 +94,7 @@ GROUP BY txn_type; </br>
 </p>
 
 <h3 align ='left'>3. For each month - how many Data Bank customers make more than 1 deposit and either 1 purchase or 1 withdrawal in a single month?</h3>
+
 WITH customer_cte AS</br>
 (</br>
 SELECT customer_id,</br>
@@ -113,6 +117,7 @@ GROUP BY month_id, month_name, year ORDER BY year, month_id;</br>
 </p>
 
 <h3 align ='left'>4. What is the closing balance for each customer at the end of the month?</h3>
+
 WITH cte1 AS (</br>
 SELECT customer_id, EXTRACT(MONTH FROM txn_date) month_id,</br>
 DATE_FORMAT(txn_date, "%b") month_name, EXTRACT(YEAR FROM txn_date) year,</br>
@@ -132,6 +137,7 @@ FROM cte2 ORDER BY customer_id, month_id, month_name, year;</br>
 </p>
 
 <h3 align ='left'>5. What is the percentage of customers who increase their closing balance by more than 5%? </h3>
+
 WITH monthly_bal AS (</br>
 SELECT customer_id, LAST_DAY(txn_date) end_of_date,</br>
 SUM(CASE WHEN txn_type IN ('withdrawal', 'purchase') </br>
@@ -170,10 +176,10 @@ FROM qualified_custs;</br>
 </br>
 </br>
 <p align="left">
-  <img src = "https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%234%20DATA%20BANK/IMAGES/CT_5B.jpg">
-</details>
+  <img src = "https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%234%20DATA%20BANK/IMAGES/CT_5B.jpg"></p>
 
-<details><summary><a href=""><b>C. Data Allocation Challenge</b></a></summary></details>
+
+[C. Data Allocation Challenge](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%234%20DATA%20BANK/DATABASE/DATA_ALLOCATION_CHALLENGE.sql)
 
 <h3 align ='left'>1. Running a customer balance column that includes the impact of each transaction ?</h3>
 
@@ -182,11 +188,12 @@ txn_amount, SUM(CASE WHEN txn_type = "deposit" THEN txn_amount</br>
 			         WHEN txn_type = "withdrawal" THEN -txn_amount</br>
                      WHEN txn_type = "purchase" THEN -txn_amount </br>
 ELSE 0 END) OVER(PARTITION BY customer_id ORDER BY txn_date) running_balance</br>
-FROM customer_transactions;</br>
+FROM customer_transactions;
+
 ### Output:</br>
 <p align="left">
-  <img src = "https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%234%20DATA%20BANK/IMAGES/DAC1.jpg">
-</details>
+<img src = "https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%234%20DATA%20BANK/IMAGES/DAC_1.jpg"></p>
+
 
 <h3 align ='left'>2. Customer balance at the end of each month</h3>
 
@@ -197,9 +204,10 @@ SUM(CASE WHEN txn_type = "deposit" THEN txn_amount</br>
          WHEN txn_type = "purchase" THEN -txn_amount ELSE 0 END) closing_balance</br>
 FROM customer_transactions GROUP BY customer_id, </br>
 EXTRACT(MONTH FROM txn_date), DATE_FORMAT(txn_date, "%b")</br>
+
 ### Output:</br>
 <p align="left">
-  <img src = "https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%234%20DATA%20BANK/IMAGES/DAC2.jpg">
+<img src = "https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%234%20DATA%20BANK/IMAGES/DAC_2.jpg"></p>
 
 <h3 align ='left'>3. Minimum, average and maximum values of the running balance for each customer.</h3>
 
@@ -216,16 +224,18 @@ SELECT customer_id, AVG(running_balance) avg_running_balance,</br>
 MIN(running_balance) min_running_balance,</br>
 MAX(running_balance) max_running_balance</br>
 FROM r_bal GROUP BY customer_id;</br>
+
 ### Output:</br>
 <p align="left">
-  <img src = "https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%234%20DATA%20BANK/IMAGES/DAC3.jpg">
+<img src = "https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%234%20DATA%20BANK/IMAGES/DAC_3.jpg"></p>
 
-</details>  
-<details><summary><a href=""><b> D. Extra Challenge</b></a></summary>
+[D. Extra Challenge](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%234%20DATA%20BANK/DATABASE/EXTRA_CHALLENGE.sql)
+
 If the annual interest rate is set at 6% and the Data Bank team wants to reward its</br>
 customers by increasing their data allocation based off the interest calculated on a </br>
 daily basis at the end of each day, how much data would be required for this option on a </br>
 monthly basis?</br>
+
 WITH transactions AS (</br>
 SELECT customer_id, txn_date, </br>
 CASE WHEN txn_type = "deposit" THEN txn_amount ELSE -txn_amount END amount,</br>
@@ -240,6 +250,6 @@ PARTITION BY customer_id ORDER BY txn_date),2) balance_with_interest</br>
 FROM transactions ORDER BY customer_id, txn_date;</br>
 ### Output:</br>
 <p align="left">
-  <img src = "https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%234%20DATA%20BANK/IMAGES/EC1.jpg">
-</details>
+  <img src = "https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%234%20DATA%20BANK/IMAGES/EC1.jpg"></p>
+
 
