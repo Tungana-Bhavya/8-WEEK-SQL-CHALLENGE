@@ -60,6 +60,8 @@ SELECT region_name, days_diff percentile_80 FROM tmp_rank WHERE row_num >= CEIL(
   <img  src="https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%234%20DATA%20BANK/IMAGES/CNE_5.jpg">
 </p>
 
+----
+
 [B. Customer Transactions](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%234%20DATA%20BANK/DATABASE/CUSTOMER_TRANSACTION.sql)
   
 <h3 align ='left'>1. What is the unique count and total amount for each transaction type?</h3>
@@ -178,6 +180,7 @@ FROM qualified_custs;</br>
 <p align="left">
   <img src = "https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%234%20DATA%20BANK/IMAGES/CT_5B.jpg"></p>
 
+----
 
 [C. Data Allocation Challenge](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%234%20DATA%20BANK/DATABASE/DATA_ALLOCATION_CHALLENGE.sql)
 
@@ -228,6 +231,8 @@ FROM r_bal GROUP BY customer_id;</br>
 ### Output:</br>
 <p align="left">
 <img src = "https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%234%20DATA%20BANK/IMAGES/DAC_3.jpg"></p>
+
+----
 
 [D. Extra Challenge](https://github.com/Tungana-Bhavya/8-WEEK-SQL-CHALLENGE/blob/main/8-WEEK-CHALLENGE/CASE%20STUDY%20%234%20DATA%20BANK/DATABASE/EXTRA_CHALLENGE.sql)
 
